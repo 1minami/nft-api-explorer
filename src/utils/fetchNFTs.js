@@ -1,7 +1,7 @@
 // Go to www.alchemy.com and create an account to grab your own api key!
 const { alchemyApiKey } = require("../secrets.json");
 const apiKey = alchemyApiKey;
-const endpoint = `https://eth-rinkeby.alchemyapi.io/v2/${apiKey}`;
+const endpoint = `https://eth-mainnet.alchemyapi.io/v2/${apiKey}`;
 
 export const fetchNFTs = async (owner, contractAddress, setNFTs, retryAttempt) => {
     if (retryAttempt === 5) {
